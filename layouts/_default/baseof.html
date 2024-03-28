@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="{{ "css/custom.css" | relURL }}">
   </head>
   <body>
+    {{ partial "navbar.html" . }}
+    
     <!-- Code that all your templates share, like a header -->
     {{ block "main" . }}
       <!-- The part of the page that begins to differ between templates -->
