@@ -1,14 +1,92 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/gt-america-trial');
+
+:root {
+  --red-losi: #E53729;
+  --black-losi: #1A1A1A;
+}
 
 body {
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'GT America Trial', sans-serif;
 }
 
 .bg-black-losi {
-  background-color: #1A1A1A;
+  background-color: var(--black-losi);
+}
+
+.btn-danger {
+  background-color: var(--red-losi);
+  color: white;
+  border-radius: 12px;
+  transition: filter 0.3s ease;
+}
+
+.btn-danger:hover {
+  background-color: var(--red-losi);
+  filter: brightness(80%) !important;
+}
+
+.btn-danger:active {
+  background-color: var(--red-losi);
+  filter: brightness(80%) !important;
 }
 
 .navbar-logo {
   width: 50%;
+}
+
+.swiper {
+  width: 100%;
+  height: auto;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: calc(100vh - 5em);
+}
+
+.swiper-pagination-bullet {
+  height: .5rem !important;
+  border-radius: 9999px !important;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+  transition-duration: .15s;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity)) !important;
+}
+
+.swiper-pagination-bullet-active {
+  width: 30px !important;
+  opacity: 1 !important;
+}
+
+.slide-content {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  z-index: 2;
+}
+
+.slide-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Sfondo nero con opacità al 50% */
+  z-index: 1; /* Assicurati che sia sotto il contenuto del testo */
 }
