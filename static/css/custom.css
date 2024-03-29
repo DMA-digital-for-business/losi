@@ -10,6 +10,10 @@ body {
   font-family: 'GT America Trial', sans-serif;
 }
 
+.red-losi {
+  color: var(--red-losi);
+}
+
 .bg-black-losi {
   background-color: var(--black-losi);
 }
@@ -33,6 +37,10 @@ body {
 
 .navbar-logo {
   width: 50%;
+}
+
+.certified-distributor {
+  width: 60%;
 }
 
 .swiper {
@@ -87,6 +95,11 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5); /* Sfondo nero con opacità al 50% */
-  z-index: 1; /* Assicurati che sia sotto il contenuto del testo */
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.numbers {
+  font-size: 7em;
+  font-weight: bold;
 }
