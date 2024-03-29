@@ -4,3 +4,11 @@ body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
 }
+
+.bg-black-losi {
+  background-color: #1A1A1A;
+}
+
+.navbar-logo {
+  width: 50%;
+}
