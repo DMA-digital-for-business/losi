@@ -1,9 +1,12 @@
 {{ define "main" }}
   <main aria-role="main">
+    <header class="homepage-header">
+      {{ partial "navbar.html" . }}
+    </header>
     <div class="homepage-content">
       {{ partial "carousel.html" . }}
       {{ partial "distributor-section.html" . }}
-
+      
       <!-- Note that the content for index.html, as a sort of list page, will pull from content/_index.md -->
       {{ .Content }}
     </div>
