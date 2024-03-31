@@ -28,6 +28,8 @@ body {
   color: white;
   border-radius: 12px;
   transition: filter 0.3s ease;
+  padding: .8em;
+  font-weight: bold;
 }
 
 .btn-danger:hover {
@@ -45,7 +47,8 @@ body {
 }
 
 .certified-distributor {
-  width: 35%;
+  width: 65%;
+  height: auto;
 }
 
 .swiper {
