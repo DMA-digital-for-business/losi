@@ -1,4 +1,9 @@
-@import url('https://fonts.cdnfonts.com/css/gt-america-trial');
+@font-face {
+  font-family: 'Avio Expanded Bold';
+  src: url('font/Avio-Expanded-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
 
 :root {
   --red-losi: #E53729;
@@ -6,8 +11,8 @@
 }
 
 body {
+  font-family: 'Avio Expanded Bold', sans-serif;
   margin: 0;
-  font-family: 'GT America Trial', sans-serif;
 }
 
 .red-losi {
@@ -36,7 +41,7 @@ body {
 }
 
 .navbar-logo {
-  width: 50%;
+  width: 45%;
 }
 
 .certified-distributor {
@@ -61,7 +66,7 @@ body {
 .swiper-slide img {
   display: block;
   width: 100%;
-  height: calc(100vh - 5em);
+  height: calc(101vh - 5em);
 }
 
 .swiper-pagination-bullet {
