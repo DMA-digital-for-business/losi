@@ -223,6 +223,11 @@ h1, h2 {
 }
 
 .application-info {
-  margin: 2em;
-  margin-top: 10em;
+  position: absolute;
+  top: 70%;
+  left: 38%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: start;
+  z-index: 2;
 }
