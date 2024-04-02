@@ -23,8 +23,7 @@ body {
   background-color: var(--black-losi);
 }
 
-.btn-danger {
-  background-color: var(--red-losi);
+.losi-btn {
   color: white;
   border-radius: 12px;
   transition: filter 0.3s ease;
@@ -32,23 +31,64 @@ body {
   font-weight: bold;
 }
 
+.btn-danger {
+  background-color: var(--red-losi);  
+}
+
 .btn-danger:hover {
   background-color: var(--red-losi);
-  filter: brightness(80%) !important;
 }
 
 .btn-danger:active {
   background-color: var(--red-losi);
-  filter: brightness(80%) !important;
+}
+
+.btn-normal {
+  background-color: var(--black-losi);
+}
+
+.btn-normal:hover {
+  background-color: var(--black-losi);
+  color: #ffffff;
+}
+
+.btn-normal:active {
+  background-color: var(--black-losi) !important;
+  color: #ffffff !important;
+}
+
+.custom-select-wrapper {
+  position: relative;
+  width: fit-content;
+}
+
+.custom-select {
+  background-color: black;
+  color: white;
+  border: none;
+  -webkit-appearance: none; /* Rimuove la freccia predefinita per WebKit/Blink */
+  -moz-appearance: none;    /* Rimuove la freccia predefinita per Firefox */
+  appearance: none;         /* Rimuove la freccia predefinita per il futuro */
+  padding-right: 2.2rem; /* Spazio per l'icona della freccia */
+}
+
+.custom-select-wrapper::after {
+  content: '\f078'; /* Codice Unicode per l'icona della freccia di FontAwesome */
+  font-family: 'FontAwesome';
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  color: white;
+  pointer-events: none; /* Impedisce che l'icona interferisca con il clic sul select */
+}
+
+.custom-select:focus {
+  outline: none;
 }
 
 .navbar-logo {
   width: 45%;
-}
-
-.certified-distributor {
-  width: 65%;
-  height: auto;
 }
 
 .swiper {
