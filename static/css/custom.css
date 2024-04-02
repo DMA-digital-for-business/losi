@@ -1,7 +1,42 @@
 @font-face {
-  font-family: 'Avio Expanded Bold';
-  src: url('font/Avio-Expanded-Bold.woff2') format('woff2');
+  font-family: 'Avio-Expanded-Bold';
+  src: url('font/woff2/woff2/Avio-Expanded-Bold.woff2') format('woff2');
   font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avio-Extended-Bold';
+  src: url('font/woff2/Avio-Extended-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avio-Extended-Medium';
+  src: url('font/woff2/Avio-Extended-Medium.woff2') format('woff2');
+  font-weight: 500; /* 500 è spesso usato per 'Medium' */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avio-Extended-Regular';
+  src: url('font/woff2/Avio-Extended-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avio-Medium';
+  src: url('font/woff2/Avio-Medium.woff2') format('woff2');
+  font-weight: 500; /* 500 è spesso usato per 'Medium' */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avio-Regular';
+  src: url('font/woff2/Avio-Regular.woff2') format('woff2');
+  font-weight: normal;
   font-style: normal;
 }
 
@@ -11,8 +46,12 @@
 }
 
 body {
-  font-family: 'Avio Expanded Bold', sans-serif;
+  font-family: 'Avio-Regular', sans-serif;
   margin: 0;
+}
+
+h1, h2 {
+  font-family: 'Avio-Extended-Bold', sans-serif;
 }
 
 .red-losi {
@@ -63,13 +102,22 @@ body {
 }
 
 .custom-select {
-  background-color: black;
+  background-color: var(--black-losi) !important;
+  padding: .8em;
+  border-radius: 12px;
+  font-weight: bold;
   color: white;
   border: none;
   -webkit-appearance: none; /* Rimuove la freccia predefinita per WebKit/Blink */
   -moz-appearance: none;    /* Rimuove la freccia predefinita per Firefox */
   appearance: none;         /* Rimuove la freccia predefinita per il futuro */
-  padding-right: 2.2rem; /* Spazio per l'icona della freccia */
+  padding-right: 2.1rem; /* Spazio per l'icona della freccia */
+}
+
+.custom-select:disabled {
+  background-color: #6c757d !important; /* Sfondo grigio per il select disabilitato */
+  color: white; /* Testo bianco per il select disabilitato */
+  opacity: 1; /* Rimuovi l'opacità aggiunta di default dai browser per gli elementi disabilitati */
 }
 
 .custom-select-wrapper::after {
