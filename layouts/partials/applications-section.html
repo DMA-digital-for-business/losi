@@ -2,47 +2,47 @@
     <!-- Titolo centrato -->
     <div class="row">
       <div class="col text-center mb-4">
-        <h2>Titolo della Sezione</h2>
+        <h2 class="fw-bold black-losi">Applications</h2>
       </div>
     </div>
   
-    <!-- Prima riga di immagini quadrate -->
+    <!-- First row -->
     <div class="row">
       <div class="col-md-6">
-        <div class="image-square" style="background-image: url('path/to/image1.jpg');">
-          <div class="overlay">
-            <h5>Titolo Immagine</h5>
-            <p>Descrizione breve dell'immagine.</p>
-          </div>
-        </div>
+        {{
+            partial "application-image.html"
+            (dict "imageName" "application-1.jpg"
+                  "title" "AEROSPACE STRUCTURES"
+                  "description" "Materials for composite and metal bonding, surface preparation, potting, edge-fill."
+        ) }}
       </div>
       <div class="col-md-6">
-        <div class="image-square" style="background-image: url('path/to/image2.jpg');">
-          <div class="overlay">
-            <h5>Titolo Immagine</h5>
-            <p>Descrizione breve dell'immagine.</p>
-          </div>
-        </div>
+        {{
+            partial "application-image.html"
+            (dict "imageName" "application-2.jpg"
+                  "title" "AEROSPACE ELECTRONICS"
+                  "description" "Electronic assembly solutions such as circuit board protection, thermal management, encapsulation, and potting."
+        ) }}
       </div>
     </div>
   
-    <!-- Seconda riga di immagini quadrate -->
+    <!-- Second row -->
     <div class="row mt-4">
       <div class="col-md-6">
-        <div class="image-square" style="background-image: url('path/to/image3.jpg');">
-          <div class="overlay">
-            <h5>Titolo Immagine</h5>
-            <p>Descrizione breve dell'immagine.</p>
-          </div>
-        </div>
+        {{
+            partial "application-image.html"
+            (dict "imageName" "application-3.jpg"
+                  "title" "AEROSPACE INTERIORS"
+                  "description" "Interior applications includes everything within the aircraft shell from the passenger compartment to the cockpit and cargo hold."
+        ) }}
       </div>
       <div class="col-md-6">
-        <div class="image-square" style="background-image: url('path/to/image4.jpg');">
-          <div class="overlay">
-            <h5>Titolo Immagine</h5>
-            <p>Descrizione breve dell'immagine.</p>
-          </div>
-        </div>
+        {{
+            partial "application-image.html"
+            (dict "imageName" "application-4.jpg"
+                  "title" "AEROSPACE MRO"
+                  "description" "MRO ensures the safety and reliability of the aircraft, covering the airframe, engine, and composites."
+        ) }}
       </div>
     </div>
   </section>
