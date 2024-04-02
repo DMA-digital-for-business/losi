@@ -43,11 +43,13 @@
 :root {
   --red-losi: #E53729;
   --black-losi: #1A1A1A;
+  --white-losi: #EAEAEA;
 }
 
 body {
   font-family: 'Avio-Regular', sans-serif;
   margin: 0;
+  background-color: var(--white-losi);
 }
 
 h1, h2 {
@@ -115,7 +117,7 @@ h1, h2 {
 }
 
 .custom-select:disabled {
-  background-color: #6c757d !important; /* Sfondo grigio per il select disabilitato */
+  background-color: #b8b8b8 !important; /* Sfondo grigio per il select disabilitato */
   color: white; /* Testo bianco per il select disabilitato */
   opacity: 1; /* Rimuovi l'opacità aggiunta di default dai browser per gli elementi disabilitati */
 }
@@ -198,4 +200,8 @@ h1, h2 {
 .numbers {
   font-size: 7em;
   font-weight: bold;
+}
+
+.custom-card-img {
+  padding: 1rem; /* Aggiungi un padding di 1rem */
 }
