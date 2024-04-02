@@ -1,0 +1,27 @@
+<section class="container-fluid py-5">
+    <div class="w-100 text-center pb-3">
+        <h2 class="my-3 fw-bold">Case Studies</h2>
+    </div>
+
+    <!-- Videos -->
+    <div class="row my-4 justify-content-center gx-4">
+        {{
+            partial "case-study-card.html"
+            (dict "videoUrl" "https://www.youtube.com/embed/BucTNZCOc24?si=LJtO6IWch_81qcuh"
+                  "title" "Phase Change Material Reliably Manages Heat in Motor Controllers"
+                  "description" "Custom Challenge Modern-day motor drives are integrating more complex power devices to manage growing energy efficiency requirements."
+        ) }}
+        {{
+            partial "case-study-card.html"
+            (dict "videoUrl" "https://www.youtube.com/embed/MspylAy8xWw?si=9elq4R-ssAuc0rmr"
+                  "title" "Phase Change Material Reliably Manages Heat in Motor Controllers"
+                  "description" "Custom Challenge Modern-day motor drives are integrating more complex power devices to manage growing energy efficiency requirements."
+        ) }}
+        {{
+            partial "case-study-card.html"
+            (dict "videoUrl" "https://www.youtube.com/embed/39DUETUao5I?si=sAOQx6DRIG2RmQ8H"
+                  "title" "Phase Change Material Reliably Manages Heat in Motor Controllers"
+                  "description" "Custom Challenge Modern-day motor drives are integrating more complex power devices to manage growing energy efficiency requirements."
+        ) }}
+    </div>
+</section>
