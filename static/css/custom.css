@@ -15,7 +15,7 @@
 @font-face {
   font-family: 'Avio-Extended-Medium';
   src: url('font/woff2/Avio-Extended-Medium.woff2') format('woff2');
-  font-weight: 500; /* 500 è spesso usato per 'Medium' */
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -29,7 +29,7 @@
 @font-face {
   font-family: 'Avio-Medium';
   src: url('font/woff2/Avio-Medium.woff2') format('woff2');
-  font-weight: 500; /* 500 è spesso usato per 'Medium' */
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -54,6 +54,10 @@ body {
 
 h1, h2 {
   font-family: 'Avio-Extended-Bold', sans-serif;
+}
+
+.black-losi {
+  color: var(--black-losi);
 }
 
 .red-losi {
@@ -203,5 +207,9 @@ h1, h2 {
 }
 
 .custom-card-img {
-  padding: 1rem; /* Aggiungi un padding di 1rem */
+  padding: 1rem;
+}
+
+.square {
+  padding-bottom: 70%;
 }
