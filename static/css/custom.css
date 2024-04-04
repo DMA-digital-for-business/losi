@@ -247,3 +247,9 @@ h1, h2 {
 .hover-grow:hover {
   transform: scale(1.1);
 }
+
+@media (max-width: 1199px) {
+  .hidden-desc {
+    display: none;
+  }
+}
