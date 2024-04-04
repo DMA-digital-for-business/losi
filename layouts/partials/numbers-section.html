@@ -26,11 +26,45 @@
         </div>
         <div class="row">
             <div class="col-12 mt-3 mx-3">
-                <p class="fs-4 lh-2 px-3">With a steadfast commitment to success dating back to 1988, Dr. Losi has established itself as a
+                <p class="fs-4 lh-2 px-3">With a steadfast commitment to success dating back to 1988, Dr. Losi has
+                    established itself as a
                     prominent company headquartered in Italy. Specializing in structural bonding solutions, surface
-                    treatment products, pre-pregs, vacuum bagging materials, assembly, and repair technologies, our global
+                    treatment products, pre-pregs, vacuum bagging materials, assembly, and repair technologies, our
+                    global
                     reach spans across various industries</p>
             </div>
         </div>
     </div>
 </section>
+
+<script>
+    function animateValue(obj, start, end, duration, includePlus = false) {
+        let startTimestamp = null;
+        const step = (timestamp) => {
+            if (!startTimestamp) startTimestamp = timestamp;
+            const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+            obj.innerHTML = (includePlus ? '+' : '') + Math.floor(progress * (end - start) + start);
+            if (progress < 1) {
+                window.requestAnimationFrame(step);
+            }
+        };
+        window.requestAnimationFrame(step);
+    }
+    
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                
+                document.querySelectorAll('.numbers').forEach(number => {
+                    const textContent = number.textContent;
+                    const value = parseInt(textContent.replace('+', ''));
+                    const includePlus = textContent.includes('+');
+                    animateValue(number, 0, value, 1000, includePlus);
+                });
+                observer.disconnect();
+            }
+        });
+    }, { threshold: 0.5 });
+    
+    observer.observe(document.querySelector('.container'));
+</script>

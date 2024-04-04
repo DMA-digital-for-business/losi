@@ -184,7 +184,7 @@ h1, h2 {
 .slide-content {
   position: absolute;
   top: 50%;
-  left: 40%;
+  left: 37%;
   transform: translate(-50%, -50%);
   color: white;
   text-align: center;
@@ -230,4 +230,20 @@ h1, h2 {
   color: white;
   text-align: start;
   z-index: 2;
+}
+
+.arrow-link {
+  transition: transform 0.3s ease;
+}
+
+.arrow-link:hover {
+  transform: translateX(5px);
+}
+
+.hover-grow {
+  transition: transform 0.3s ease;
+}
+
+.hover-grow:hover {
+  transform: scale(1.1);
 }
