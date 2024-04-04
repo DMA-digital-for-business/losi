@@ -1,41 +1,41 @@
 @font-face {
   font-family: 'Avio-Expanded-Bold';
-  src: url('font/woff2/woff2/Avio-Expanded-Bold.woff2') format('woff2');
+  src: url('../font/woff2/woff2/Avio-Expanded-Bold.woff2') format('woff2');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Avio-Extended-Bold';
-  src: url('font/woff2/Avio-Extended-Bold.woff2') format('woff2');
+  src: url('../font/woff2/Avio-Extended-Bold.woff2') format('woff2');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Avio-Extended-Medium';
-  src: url('font/woff2/Avio-Extended-Medium.woff2') format('woff2');
-  font-weight: 500;
+  src: url('../font/woff2/Avio-Extended-Medium.woff2') format('woff2');
+  font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Avio-Extended-Regular';
-  src: url('font/woff2/Avio-Extended-Regular.woff2') format('woff2');
+  src: url('../font/woff2/Avio-Extended-Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Avio-Medium';
-  src: url('font/woff2/Avio-Medium.woff2') format('woff2');
+  src: url('../font/woff2/Avio-Medium.woff2') format('woff2');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Avio-Regular';
-  src: url('font/woff2/Avio-Regular.woff2') format('woff2');
+  src: url('../font/woff2/Avio-Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
@@ -47,7 +47,7 @@
 }
 
 body {
-  font-family: 'Avio-Regular', sans-serif;
+  font-family: 'Avio-Extended-Regular', sans-serif;
   margin: 0;
   background-color: var(--white-losi);
 }
