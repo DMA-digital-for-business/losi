@@ -195,6 +195,13 @@ h1, h2 {
   z-index: 2;
 }
 
+
+.slide-title {
+  word-spacing: 0.08em;
+  background-color: salmon;
+  max-width: 70%;
+}
+
 .overlay {
   position: absolute;
   top: 0;
