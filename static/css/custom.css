@@ -52,6 +52,14 @@ body {
   background-color: var(--white-losi);
 }
 
+.regular-font {
+  font-family: 'Avio-Regular', sans-serif;
+}
+
+.medium-font {
+  font-family: 'Avio-Extended-Medium', sans-serif;
+}
+
 h1, h2 {
   font-family: 'Avio-Extended-Bold', sans-serif;
 }
