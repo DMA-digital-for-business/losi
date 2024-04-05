@@ -175,7 +175,7 @@ h1, h2 {
 .swiper-slide img {
   display: block;
   width: 100%;
-  height: calc(101vh - 5em);
+  height: calc(102vh - 5em);
 }
 
 .swiper-pagination-bullet {
