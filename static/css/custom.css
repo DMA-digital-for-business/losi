@@ -126,31 +126,40 @@ h1, h2 {
   font-weight: bold;
   color: white;
   border: none;
-  -webkit-appearance: none; /* Rimuove la freccia predefinita per WebKit/Blink */
-  -moz-appearance: none;    /* Rimuove la freccia predefinita per Firefox */
-  appearance: none;         /* Rimuove la freccia predefinita per il futuro */
-  padding-right: 2.1rem; /* Spazio per l'icona della freccia */
+  padding-right: 2.25em;
 }
 
 .custom-select:disabled {
-  background-color: #b8b8b8 !important; /* Sfondo grigio per il select disabilitato */
-  color: white; /* Testo bianco per il select disabilitato */
-  opacity: 1; /* Rimuovi l'opacità aggiunta di default dai browser per gli elementi disabilitati */
+  background-color: #b8b8b8 !important;
+  color: white;
+  opacity: 1;
 }
 
 .custom-select-wrapper::after {
-  content: '\f078'; /* Codice Unicode per l'icona della freccia di FontAwesome */
+  content: '\f078';
   font-family: 'FontAwesome';
   position: absolute;
   top: 50%;
   right: 1rem;
   transform: translateY(-50%);
   color: white;
-  pointer-events: none; /* Impedisce che l'icona interferisca con il clic sul select */
+  pointer-events: none;
+}
+
+/* Per Internet Explorer 10+ */
+.custom-select-wrapper .custom-select::-ms-expand {
+  display: none;
 }
 
 .custom-select:focus {
   outline: none;
+}
+
+.custom-select-wrapper .custom-select {
+  -webkit-appearance: none; /* Rimuove la freccia su WebKit browsers come Chrome e Safari */
+  -moz-appearance: none;    /* Rimuove la freccia su Mozilla Firefox */
+  appearance: none;         /* Rimuove la freccia su browsers moderni che supportano la proprietà standard */
+  background: transparent;
 }
 
 .navbar-logo {
