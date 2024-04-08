@@ -261,3 +261,17 @@ h1, h2 {
     display: none;
   }
 }
+
+iframe {
+  margin: auto;
+  display: block;
+}
+
+.video-wrapper {
+  max-width: 100%;
+}
+
+.text-wrapper {
+  max-width: 21em;
+  margin: auto;
+}
