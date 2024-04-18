@@ -4,217 +4,89 @@
       <h2 class="fw-bold">Products</h2>
     </div>
   </div>
-  
-  <!-- Buttons & filters -->
-  <div class="row my-4 justify-content-center row-gap-3">
 
-    <div class="col-auto" id="selected-filters">
-      <button type="button" class="btn btn-normal losi-btn position-relative text-uppercase">
-        <span id="selected_filter_name"></span>
-        <span class="position-absolute top-0 start-0 translate-middle badge rounded-pill bg-white text-black" id="cancel-btn">
-          x
-        </span>
-      </button>
-    </div>
-    
+  <div class="row my-4 justify-content-center row-gap-3">
     <div class="col-auto">
       <div class="custom-select-wrapper">
         <select class="form-select custom-select text-uppercase shadow-none" id="filter-selector">
-          <option value="all" selected>Mostra tutti</option>
-          <option value="bonderite">Bonderite</option>
-          <option value="loctite">Loctite</option>
+          <option value="all" selected>Show All Products</option>
+          <optgroup label="Loctite" id="optgroup-loctite">
+            <option value="loctite-all">All</option>
+            <option value="loctite-film-adhesives">Film Adhesives</option>
+            <option value="loctite-paste-adhesives">Paste Adhesives</option>
+            <option value="loctite-primers">Primers</option>
+            <option value="loctite-syntactics-core-fill-and-abrasives">Syntactics, Core-Fill, and Abrasives</option>
+            <option value="loctite-mold-release-frekote">Mold Release (FREKOTE)</option>
+          </optgroup>
+          <optgroup label="Bonderite" id="optgroup-bonderite">
+            <option value="bonderite-all">All</option>
+            <option value="bonderite-metal-pretreatment">Metal Pretreatment</option>
+            <option value="bonderite-chemical-milling-and-maskants">Chemical Milling and Maskants</option>
+            <option value="bonderite-aircraft-engine-cleaners-maintenance">Aircraft Engine Cleaners & Maintenance
+            </option>
+            <option value="bonderite-aircraft-depaint-and-repaint">Aircraft Depaint and Repaint</option>
+          </optgroup>
         </select>
       </div>
     </div>
-
-    <!--
-      <div class="col-auto">
-        <div class="col-auto">
-          <div class="custom-select-wrapper">
-            <select class="form-select custom-select text-uppercase shadow-none" disabled>
-              <option selected>Select</option>
-              <option value="1">Opzione 1</option>
-              <option value="2">Opzione 2</option>
-              <option value="3">Opzione 3</option>
-            </select>
-          </div>
-        </div>
-      </div>
-    -->
   </div>
 
-  <!-- Cards -->
-  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 justify-content-center">    
-      {{
-        partial "card.html"
-        (dict "productImage" "packshot-indv-bonderite-m-cr-1132-aero-03-2020.webp"
-              "type" "bonderite"
-              "productName" "BONDERITE M-CR 1132 AERO"
-              "pdfUrl" "https://datasheets.tdx.henkel.com/BONDERITE-M-CR-1132-AERO-en_GL.pdf"
-      ) }}
-      {{
-        partial "card.html"
-        (dict "productImage" "packshot-indv-bonderite-m-cr-871-aero-03-2020.webp"
-              "type" "bonderite"
-              "productName" "BONDERITE M-CR 871 AERO"
-              "pdfUrl" "https://datasheets.tdx.henkel.com/BONDERITE-M-CR-871-en_GL.pdf"
-      ) }}
-      {{
-        partial "card.html"
-        (dict "productImage" "fallback_product_image.png"
-              "type" "bonderite"
-              "productName" "BONDERITE M-CR 1200 AERO"
-              "pdfUrl" "https://datasheets.tdx.henkel.com/BONDERITE-M-CR-ALCRM1200-AERO-en_GL.pdf"
-      ) }}
-      {{
-        partial "card.html"
-        (dict "productImage" "packshot-indv-bonderite-m-cr-1200s-aero-03-2020.webp"
-              "type" "bonderite"
-              "productName" "BONDERITE M-CR 1200S AERO"
-              "pdfUrl" "https://datasheets.tdx.henkel.com/BONDERITE-M-CR-1132-AERO-en_GL.pdf"
-      ) }}
-      {{
-        partial "card.html"
-        (dict "productImage" "fallback_product_image.png"
-              "type" "bonderite"
-              "productName" "BONDERITE S-MA 551LA-2 AERO"
-              "pdfUrl" "https://www.drlosi.com/wp-content/uploads/2021/08/BONDERITE-S-MA-551LA-2-AERO-TDS.pdf"
-      ) }}
-      {{
-        partial "card.html"
-        (dict "productImage" "fallback_product_image.png"
-              "type" "bonderite"
-              "productName" "BONDERITE S-MA 550 AERO"
-              "pdfUrl" "https://www.drlosi.com/wp-content/uploads/2021/08/BONDERITE-S-MA-550-AERO-TDS.pdf"
-      ) }}
-      {{
-        partial "card.html"
-        (dict "productImage" "packshot-grp-bonderite-s-ma-537-42-aero-eimea-03-2020.webp"
-              "type" "bonderite"
-              "productName" "BONDERITE S-MA 537-42 AERO"
-              "pdfUrl" "https://datasheets.tdx.henkel.com/BONDERITE-S-MA-537-42-AERO-en_GL.pdf"
-      ) }}
-      {{
-        partial "card.html"
-        (dict "productImage" "fallback_product_image.png"
-              "type" "bonderite"
-              "productName" "BONDERITE S-MA 522 AERO"
-              "pdfUrl" "https://datasheets.tdx.henkel.com/BONDERITE-S-MA-522-AERO-en_GL.pdf"
-      ) }}
-      {{
-        partial "card.html"
-        (dict "productImage" "packshot-grp-bonderite-c-ic-smutgo-nc-aero-03-2020.jpeg"
-              "type" "bonderite"
-              "productName" "BONDERITE C-IC SMUTGO NC AERO-EN TDS"
-              "pdfUrl" "https://datasheets.tdx.henkel.com/BONDERITE-C-IC-SMUTGO-NC-AERO-en_GL.pdf"
-      ) }}
-      {{
-        partial "card.html"
-        (dict "productImage" "packshot-indv-bonderite-c-ak-4181-aero-03-2020.webp"
-              "type" "bonderite"
-              "productName" "BONDERITE C-AK 4181 AERO-EN TDS"
-              "pdfUrl" "https://datasheets.tdx.henkel.com/BONDERITE-C-AK-4181-AERO-en_GL.pdf"
-      ) }}
-      {{
-        partial "card.html"
-        (dict "productImage" "packshot-grp-bonderite-c-ic-4104-aero-03-2020.webp"
-              "type" "bonderite"
-              "productName" "BONDERITE C-IC 4104 AERO-EN TDS"
-              "pdfUrl" "https://datasheets.tdx.henkel.com/BONDERITE-C-IC-4104-AERO-en_GL.pdf"
-      ) }}
-      {{
-        partial "card.html"
-        (dict "productImage" "packshot-grp-bonderite-s-st-6813e-aero-03-2020.webp"
-              "type" "bonderite"
-              "productName" "BONDERITE S-ST 6813 AERO TDS"
-              "pdfUrl" "https://datasheets.tdx.henkel.com/BONDERITE-S-ST-6813-E-AERO-en_GL.pdf"
-      ) }}
-      {{
-        partial "card.html"
-        (dict "productImage" "packshot-grp-bonderite-s-st-6930-aero-07-2020.webp"
-              "type" "bonderite"
-              "productName" "BONDERITE S-ST 6930 AERO TDS"
-              "pdfUrl" "https://dm.henkel-dam.com/is/content/henkel/brochure-ready-to-use-surface-treatment-bonderite"
-      ) }}
-      {{
-        partial "card.html"
-        (dict "productImage" "packshot-grp-bonderite-s-st-1270-5-aero-eimea-03-2020.webp"
-              "type" "bonderite"
-              "productName" "BONDERITE S-ST 1270-5-EN TDS"
-              "pdfUrl" "https://dm.henkel-dam.com/is/content/henkel/brochure-ready-to-use-surface-treatment-bonderite"
-      ) }}
-      {{
-        partial "card.html"
-        (dict "productImage" "packshot-bonderite-s-st-6776-lo-aero.webp"
-              "type" "bonderite"
-              "productName" "BONDERITE S-ST 6776 LO AERO-EN-TDS"
-              "pdfUrl" "https://datasheets.tdx.henkel.com/BONDERITE-S-ST-6776-LO-AERO-en_GL.pdf"
-      ) }}
-      {{
-        partial "card.html"
-        (dict "productImage" "fallback_product_image.png"
-              "type" "bonderite"
-              "productName" "BONDERITE S-AD 5555B AERO TDS"
-              "pdfUrl" "https://www.drlosi.com/wp-content/uploads/2021/08/BONDERITE-S-AD-5555B-AERO-TDS.pdf"
-      ) }}
-      {{
-        partial "card.html"
-        (dict "productImage" "fallback_product_image.png"
-              "type" "loctite"
-              "productName" "LOCTITE PROVA"
-              "pdfUrl" "https://www.drlosi.com/wp-content/uploads/2021/08/BONDERITE-S-AD-5555B-AERO-TDS.pdf"
-      ) }}
-      {{
-        partial "card.html"
-        (dict "productImage" "fallback_product_image.png"
-              "type" "loctite"
-              "productName" "LOCTITE PROVA"
-              "pdfUrl" "https://www.drlosi.com/wp-content/uploads/2021/08/BONDERITE-S-AD-5555B-AERO-TDS.pdf"
-      ) }}
-      {{
-        partial "card.html"
-        (dict "productImage" "fallback_product_image.png"
-              "type" "loctite"
-              "productName" "LOCTITE PROVA"
-              "pdfUrl" "https://www.drlosi.com/wp-content/uploads/2021/08/BONDERITE-S-AD-5555B-AERO-TDS.pdf"
-      ) }}
-      {{
-        partial "card.html"
-        (dict "productImage" "fallback_product_image.png"
-              "type" "loctite"
-              "productName" "LOCTITE PROVA"
-              "pdfUrl" "https://www.drlosi.com/wp-content/uploads/2021/08/BONDERITE-S-AD-5555B-AERO-TDS.pdf"
-      ) }}    
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 justify-content-center">
+    {{
+    partial "card.html"
+    (dict "productImage" "packshot-indv-bonderite-m-cr-1132-aero-03-2020.webp"
+      "type" "bonderite"
+      "productName" "BONDERITE M-CR 1132 AERO"
+      "pdfUrl" "https://datasheets.tdx.henkel.com/BONDERITE-M-CR-1132-AERO-en_GL.pdf"
+    ) }}
+    {{
+    partial "card.html"
+    (dict "productImage" "fallback_product_image.png"
+      "type" "loctite"
+      "productName" "LOCTITE PROVA"
+      "pdfUrl" "https://www.drlosi.com/wp-content/uploads/2021/08/BONDERITE-S-AD-5555B-AERO-TDS.pdf"
+    ) }}
+    {{
+    partial "card.html"
+    (dict "productImage" "fallback_product_image.png"
+      "type" "loctite-film-adhesives"
+      "productName" "LOCTITE PROVA"
+      "pdfUrl" "https://www.drlosi.com/wp-content/uploads/2021/08/BONDERITE-S-AD-5555B-AERO-TDS.pdf"
+    ) }}
   </div>
 </section>
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    const selectedFilters = document.querySelector('#selected-filters');
-    selectedFilters.style.display = 'none';
     const filterSelector = document.querySelector('#filter-selector');
-    const selectedFilterName = document.querySelector('#selected_filter_name');
     const productCards = document.querySelectorAll('.product-card');
-    const cancelBtn = document.querySelector('#cancel-btn');
 
-    function updateFilter() {
-      const filterValue = filterSelector.value;
-
-      selectedFilters.style.display = filterValue === 'all' ? 'none' : 'block';
-      if (filterValue !== 'all') {
-        selectedFilterName.textContent = filterValue;
-      }
+    function updateFilters() {
+      const selectedOption = filterSelector.options[filterSelector.selectedIndex];
+      const selectedValue = selectedOption.value;
+      const selectedText = selectedOption.text;
+      const isBrandOption = selectedValue.endsWith('-all');
       
       productCards.forEach(card => {
-        card.style.display = (filterValue === 'all' || card.classList.contains(filterValue)) ? 'block' : 'none';
+        if (selectedValue === 'all') {
+          card.classList.remove('d-none');
+        } else if (isBrandOption) {          
+          const brandClass = selectedValue.replace('-all', '');
+          if (card.classList.contains(brandClass)) {
+            card.classList.remove('d-none');
+          } else {
+            card.classList.add('d-none');
+          }
+        } else {
+          if (card.classList.contains(selectedValue)) {
+            card.classList.remove('d-none');
+          } else {
+            card.classList.add('d-none');
+          }
+        }
       });
     }
-    
-    filterSelector.addEventListener('change', updateFilter);
 
-    cancelBtn.addEventListener('click', () => {
-      filterSelector.value = 'all';
-      updateFilter();
-    });
+    filterSelector.addEventListener('change', updateFilters);
   });
 </script>
