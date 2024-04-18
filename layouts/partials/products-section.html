@@ -11,7 +11,7 @@
         <select class="form-select custom-select text-uppercase shadow-none" id="filter-selector">
           <option value="all" selected>Show All Products</option>
           <optgroup label="Loctite" id="optgroup-loctite">
-            <option value="loctite-all">All</option>
+            <option value="loctite-all">All Loctite</option>
             <option value="loctite-film-adhesives">Film Adhesives</option>
             <option value="loctite-paste-adhesives">Paste Adhesives</option>
             <option value="loctite-primers">Primers</option>
@@ -19,7 +19,7 @@
             <option value="loctite-mold-release-frekote">Mold Release (FREKOTE)</option>
           </optgroup>
           <optgroup label="Bonderite" id="optgroup-bonderite">
-            <option value="bonderite-all">All</option>
+            <option value="bonderite-all">All Bonderite</option>
             <option value="bonderite-metal-pretreatment">Metal Pretreatment</option>
             <option value="bonderite-chemical-milling-and-maskants">Chemical Milling and Maskants</option>
             <option value="bonderite-aircraft-engine-cleaners-maintenance">Aircraft Engine Cleaners & Maintenance
@@ -32,27 +32,7 @@
   </div>
 
   <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 justify-content-center">
-    {{
-    partial "card.html"
-    (dict "productImage" "packshot-indv-bonderite-m-cr-1132-aero-03-2020.webp"
-      "type" "bonderite"
-      "productName" "BONDERITE M-CR 1132 AERO"
-      "pdfUrl" "https://datasheets.tdx.henkel.com/BONDERITE-M-CR-1132-AERO-en_GL.pdf"
-    ) }}
-    {{
-    partial "card.html"
-    (dict "productImage" "fallback_product_image.png"
-      "type" "loctite"
-      "productName" "LOCTITE PROVA"
-      "pdfUrl" "https://www.drlosi.com/wp-content/uploads/2021/08/BONDERITE-S-AD-5555B-AERO-TDS.pdf"
-    ) }}
-    {{
-    partial "card.html"
-    (dict "productImage" "fallback_product_image.png"
-      "type" "loctite-film-adhesives"
-      "productName" "LOCTITE PROVA"
-      "pdfUrl" "https://www.drlosi.com/wp-content/uploads/2021/08/BONDERITE-S-AD-5555B-AERO-TDS.pdf"
-    ) }}
+    {{ partial "film-adhesives.html" . }}
   </div>
 </section>
 
