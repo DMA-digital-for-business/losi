@@ -1,16 +1,17 @@
 <div class="product-card {{ .type }}">
-    <div class="col">
-        <div class="card rounded-4 border-0 h-100">
-            <img src="img/products/{{ .productImage }}" class="card-img-top img-fluid custom-card-img"
-                alt="{{ .productName }}">
-            <div class="card-body">
+    <div class="col h-100">
+        <div class="card rounded-4 border-0 h-100 d-flex flex-column">
+            <img src="img/products/{{ .productImage }}" class="card-img-top img-fluid custom-card-img" alt="{{ .productName }}">
+            <div class="card-body d-flex flex-column">
                 <h5 class="card-title text-uppercase fw-bold fs-3">{{ .productName }}</h5>
-                <p class="card-text regular-font">Il rivestimento dry-in-place, facile da usare, è un metodo di ritocco
-                    delle superfici di aeromobili e parti di aeromobili economicamente vantaggioso e sicuro.</p>
-                <a href="#" class="btn btn-danger losi-btn text-uppercase w-100" data-bs-toggle="modal" data-bs-target="#contactModal">Contact us</a>
-                <a href="{{ .pdfUrl }}" target="_blank"
-                    class="text-black text-uppercase fw-bold d-flex justify-content-center mt-3 text-decoration-none text-center hover-grow">DOWNLOAD
-                    BROCHURE</a>
+                <p class="card-text regular-font flex-grow-1">
+                    Il rivestimento dry-in-place, facile da usare, è un metodo di ritocco
+                    delle superfici di aeromobili e parti di aeromobili economicamente vantaggioso e sicuro.
+                </p>
+                <div class="mt-auto">
+                    <a href="#" class="btn btn-danger losi-btn text-uppercase w-100" data-bs-toggle="modal" data-bs-target="#contactModal">Contact us</a>
+                    <a href="{{ .pdfUrl }}" target="_blank" class="text-black text-uppercase fw-bold d-flex justify-content-center mt-3 text-decoration-none text-center hover-grow">DOWNLOAD BROCHURE</a>
+                </div>
             </div>
         </div>
     </div>
