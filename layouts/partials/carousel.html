@@ -1,53 +1,80 @@
 <!-- Swiper -->
-<div class="swiper mySwiper">
-  <div class="swiper-wrapper">
-    <!-- Slide 1 -->
-    <div class="swiper-slide">
-      <div class="overlay"></div>
-      <img src="img/aerospace-industry.jpeg" alt="Image 1" class="object-fit-cover">
-      <div class="slide-content text-start">
-        <h1 class="medium-font slide-title">Global supplier of composite parts manufacturing solutions</h1>
-        <p class="lh-lg w-75 fs-6 regular-font">Losi Group serves as a one-stop shop for the aerospace, motorsports and other industries with a portfolio of premium brands and technical expertise.</p>
-        <a href="#" class="btn btn-danger losi-btn text-uppercase" data-bs-toggle="modal" data-bs-target="#contactModal">Contact us</a>
-      </div>
-    </div>
-    <!--
+<div class="swiper mySwiper position-relative">
+	<div class="position-absolute top-0 start-0 bottom-0 end-0">
+		<div class="overlay"></div>
+		<div class="slide-content text-start">
+			<h1 class="medium-font slide-title">
+				Premium Authorized Distributor of Henkel Aerospace
+			</h1>
+			<p class="lh-lg w-75 fs-6 regular-font">
+				Losi Group is a premium authorized distributor of Henkel
+				Aerospace products, including market leader brands Loctite,
+				Bonderite and Frekote.
+			</p>
+			<a
+				href="#"
+				class="btn btn-danger losi-btn text-uppercase"
+				data-bs-toggle="modal"
+				data-bs-target="#contactModal"
+				>Get A Quote</a
+			>
+		</div>
+	</div>
+	<div class="swiper-wrapper">
+		<!-- Slide 1 -->
+		<div class="swiper-slide">
+			<img
+				src="img/aerospace-industry.jpeg"
+				alt="aerospace-industry"
+				class="object-fit-cover"
+			/>
+		</div>
 
-    <div class="swiper-slide">
-      <img src="img/aerospace-industry.jpeg" alt="Image 2" class="object-fit-cover">
-    </div>
-    
-    <div class="swiper-slide">
-      <img src="img/aerospace-industry.jpeg" alt="Image 3" class="object-fit-cover">
-    </div>
-    
-    <div class="swiper-slide">
-      <img src="img/aerospace-industry.jpeg" alt="Image 3" class="object-fit-cover">
-    </div>
+		<div class="swiper-slide">
+			<img
+				src="img/aerospace-industry.jpeg"
+				alt="Image 2"
+				class="object-fit-cover"
+			/>
+		</div>
 
-    -->
-  </div>
-  <!-- Pagination -->
-  <div class="swiper-pagination"></div>
+		<div class="swiper-slide">
+			<img
+				src="img/aerospace-industry.jpeg"
+				alt="Image 3"
+				class="object-fit-cover"
+			/>
+		</div>
+
+		<div class="swiper-slide">
+			<img
+				src="img/aerospace-industry.jpeg"
+				alt="Image 3"
+				class="object-fit-cover"
+			/>
+		</div>
+	</div>
+	<!-- Pagination -->
+	<div class="swiper-pagination"></div>
 </div>
 
 <script>
-  let swiper = new Swiper('.mySwiper', {
-    spaceBetween: 0,
-    centeredSlides: true,
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-      bulletClass: 'swiper-pagination-bullet',
-      bulletActiveClass: 'swiper-pagination-bullet-active'
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
+	let swiper = new Swiper(".mySwiper", {
+		spaceBetween: 0,
+		centeredSlides: true,
+		autoplay: {
+			delay: 2500,
+			disableOnInteraction: false,
+		},
+		pagination: {
+			el: ".swiper-pagination",
+			clickable: true,
+			bulletClass: "swiper-pagination-bullet",
+			bulletActiveClass: "swiper-pagination-bullet-active",
+		},
+		navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		},
+	});
 </script>
