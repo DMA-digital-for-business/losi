@@ -1,311 +1,317 @@
 @font-face {
-	font-family: "Avio-Expanded-Bold";
-	src: url("../font/woff2/woff2/Avio-Expanded-Bold.woff2") format("woff2");
-	font-weight: bold;
-	font-style: normal;
+    font-family: "Avio-Expanded-Bold";
+    src: url("../font/woff2/woff2/Avio-Expanded-Bold.woff2") format("woff2");
+    font-weight: bold;
+    font-style: normal;
 }
 
 @font-face {
-	font-family: "Avio-Extended-Bold";
-	src: url("../font/woff2/Avio-Extended-Bold.woff2") format("woff2");
-	font-weight: bold;
-	font-style: normal;
+    font-family: "Avio-Extended-Bold";
+    src: url("../font/woff2/Avio-Extended-Bold.woff2") format("woff2");
+    font-weight: bold;
+    font-style: normal;
 }
 
 @font-face {
-	font-family: "Avio-Extended-Medium";
-	src: url("../font/woff2/Avio-Extended-Medium.woff2") format("woff2");
-	font-weight: 700;
-	font-style: normal;
+    font-family: "Avio-Extended-Medium";
+    src: url("../font/woff2/Avio-Extended-Medium.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
 }
 
 @font-face {
-	font-family: "Avio-Extended-Regular";
-	src: url("../font/woff2/Avio-Extended-Regular.woff2") format("woff2");
-	font-weight: normal;
-	font-style: normal;
+    font-family: "Avio-Extended-Regular";
+    src: url("../font/woff2/Avio-Extended-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-	font-family: "Avio-Medium";
-	src: url("../font/woff2/Avio-Medium.woff2") format("woff2");
-	font-weight: 500;
-	font-style: normal;
+    font-family: "Avio-Medium";
+    src: url("../font/woff2/Avio-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
 }
 
 @font-face {
-	font-family: "Avio-Regular";
-	src: url("../font/woff2/Avio-Regular.woff2") format("woff2");
-	font-weight: normal;
-	font-style: normal;
+    font-family: "Avio-Regular";
+    src: url("../font/woff2/Avio-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
 }
 
 :root {
-	--red-losi: #e53729;
-	--black-losi: #1a1a1a;
-	--white-losi: #eaeaea;
+    --red-losi: #e53729;
+    --black-losi: #1a1a1a;
+    --white-losi: #eaeaea;
 }
 
 body {
-	font-family: "Avio-Extended-Regular", sans-serif;
-	margin: 0;
-	background-color: var(--white-losi);
+    font-family: "Avio-Extended-Regular", sans-serif;
+    margin: 0;
+    background-color: var(--white-losi);
 }
 
 .regular-font {
-	font-family: "Avio-Regular", sans-serif;
+    font-family: "Avio-Regular", sans-serif;
 }
 
 .medium-font {
-	font-family: "Avio-Extended-Medium", sans-serif;
+    font-family: "Avio-Extended-Medium", sans-serif;
 }
 
 h1,
 h2 {
-	font-family: "Avio-Extended-Bold", sans-serif;
+    font-family: "Avio-Extended-Bold", sans-serif;
 }
 
 .black-losi {
-	color: var(--black-losi);
+    color: var(--black-losi);
 }
 
 .red-losi {
-	color: var(--red-losi);
+    color: var(--red-losi);
 }
 
 .bg-black-losi {
-	background-color: var(--black-losi);
+    background-color: var(--black-losi);
 }
 
 .losi-btn {
-	color: white;
-	border-radius: 12px;
-	transition: filter 0.3s ease;
-	padding: 0.8em;
-	font-weight: bold;
+    color: white;
+    border-radius: 12px;
+    transition: filter 0.3s ease;
+    padding: 0.8em;
+    font-weight: bold;
 }
 
 .losi-btn:hover {
-	filter: brightness(2);
+    filter: brightness(2);
 }
 
 .btn-danger {
-	background-color: var(--red-losi);
+    background-color: var(--red-losi);
 }
 
 .btn-danger:hover {
-	background-color: var(--red-losi);
+    background-color: var(--red-losi);
 }
 
 .btn-danger:active {
-	background-color: var(--red-losi);
+    background-color: var(--red-losi);
 }
 
 .btn-normal {
-	background-color: var(--black-losi);
+    background-color: var(--black-losi);
 }
 
 .btn-normal:hover {
-	background-color: var(--black-losi);
-	color: #ffffff;
+    background-color: var(--black-losi);
+    color: #ffffff;
 }
 
 .btn-normal:active {
-	background-color: var(--black-losi) !important;
-	color: #ffffff !important;
+    background-color: var(--black-losi) !important;
+    color: #ffffff !important;
 }
 
 .custom-select-wrapper {
-	position: relative;
-	width: min-content;
+    position: relative;
+    width: min-content;
+}
+
+.custom-select-container {
+    position: relative;
 }
 
 .custom-select {
-	background-color: var(--black-losi) !important;
-	padding: 0.8em;
-	border-radius: 12px;
-	font-weight: bold;
-	color: white;
-	border: none;
-	padding-right: 2.25em;
-	width: max-content;
-	position: relative;
+    background-color: var(--black-losi) !important;
+    padding: 0.8em;
+    border-radius: 12px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    padding-right: 2.25em;
+    width: max-content;
+    max-width: 400px;
+    text-overflow: ellipsis;
+    overflow: hidden !important;
+    position: relative;
 }
 
 .custom-select:disabled {
-	background-color: #b8b8b8 !important;
-	color: white;
-	opacity: 1;
+    background-color: #b8b8b8 !important;
+    color: white;
+    opacity: 1;
 }
 
-.custom-select::after {
-	content: "\f078";
-	font-family: "FontAwesome";
-	position: absolute;
-	top: 50%;
-	right: 1rem;
-	transform: translateY(-50%);
-	color: white;
-	pointer-events: none;
-	width: 40px;
-	height: 40px;
-	z-index: 100;
+.custom-select-container::after {
+    content: "\f078";
+    font-family: "FontAwesome";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    color: white;
+    pointer-events: none;
+    width: 40px;
+    z-index: 10000;
+}
+
+.custom-select:focus {
+    outline: none;
 }
 
 /* Per Internet Explorer 10+ */
 .custom-select-wrapper .custom-select::-ms-expand {
-	display: none;
-}
-
-.custom-select:focus {
-	outline: none;
+    display: none;
 }
 
 .custom-select-wrapper .custom-select {
-	-webkit-appearance: none; /* Rimuove la freccia su WebKit browsers come Chrome e Safari */
-	-moz-appearance: none; /* Rimuove la freccia su Mozilla Firefox */
-	appearance: none; /* Rimuove la freccia su browsers moderni che supportano la proprietà standard */
-	background: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: transparent;
 }
 
 .navbar-logo {
-	width: 45%;
+    width: 45%;
 }
 
 .swiper {
-	width: 100%;
-	height: auto;
+    width: 100%;
+    height: auto;
 }
 
 .swiper-slide {
-	text-align: center;
-	font-size: 18px;
-	background: #fff;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: relative;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
 .swiper-slide img {
-	display: block;
-	width: 100%;
-	height: calc(100vh - 82px);
+    display: block;
+    width: 100%;
+    height: calc(100vh - 82px);
 }
 
 .swiper-pagination-bullet {
-	height: 0.5rem !important;
-	border-radius: 9999px !important;
-	transition-property: all;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-	transition-duration: 0.15s;
-	--tw-bg-opacity: 1;
-	background-color: rgb(255 255 255 / var(--tw-bg-opacity)) !important;
+    height: 0.5rem !important;
+    border-radius: 9999px !important;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 0.15s;
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity)) !important;
 }
 
 .swiper-pagination-bullet-active {
-	width: 30px !important;
-	opacity: 1 !important;
+    width: 30px !important;
+    opacity: 1 !important;
 }
 
 .slide-content {
-	position: absolute;
-	top: 50%;
-	left: 37%;
-	transform: translate(-50%, -50%);
-	color: white;
-	text-align: center;
-	z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 37%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 2;
 }
 
 .overlay {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background: rgba(0, 0, 0, 0.5);
-	z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
 }
 
 .numbers {
-	font-size: 7em;
-	font-weight: bold;
+    font-size: 7em;
+    font-weight: bold;
 }
 
 .custom-card-img {
-	padding: 1rem;
+    padding: 1rem;
 }
 
 .image-square {
-	position: relative;
-	width: 100%;
-	padding-top: 50%; /* Aspect ratio 1:1 */
-	background-size: cover;
-	background-position: center;
+    position: relative;
+    width: 100%;
+    padding-top: 50%; /* Aspect ratio 1:1 */
+    background-size: cover;
+    background-position: center;
 }
 
 .application-info {
-	position: absolute;
-	top: 50%;
-	left: 5%;
-	max-width: 30em;
-	color: white;
-	text-align: start;
-	z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    max-width: 30em;
+    color: white;
+    text-align: start;
+    z-index: 2;
 }
 
 .arrow-link {
-	transition: transform 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .arrow-link:hover {
-	transform: translateX(5px);
+    transform: translateX(5px);
 }
 
 .hover-grow {
-	transition: transform 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .hover-grow:hover {
-	transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 @media (max-width: 1199px) {
-	.hidden-desc {
-		display: none;
-	}
-	.application-info {
-		transform: translateY(30%);
-	}
+    .hidden-desc {
+        display: none;
+    }
+    .application-info {
+        transform: translateY(30%);
+    }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
-	.application-info {
-		transform: none;
-	}
+    .application-info {
+        transform: none;
+    }
 }
 
 @media (max-width: 768px) {
-	.custom-select {
-		max-width: 320px;
-	}
+    .custom-select {
+        max-width: 320px;
+    }
 }
 
 iframe {
-	margin: auto;
-	display: block;
+    margin: auto;
+    display: block;
 }
 
 .video-wrapper {
-	max-width: 100%;
+    max-width: 100%;
 }
 
 .text-wrapper {
-	max-width: 21em;
-	margin: auto;
+    max-width: 21em;
+    margin: auto;
 }
 
 .max-w-40 {
-	max-width: 40%;
+    max-width: 40%;
 }
