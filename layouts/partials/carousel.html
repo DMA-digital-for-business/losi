@@ -4,19 +4,17 @@
 		<div class="overlay"></div>
 		<div class="slide-content text-start">
 			<h1 class="medium-font slide-title">
-				Premium Authorized Distributor of Henkel Aerospace
+				{{ T "heroTitle" }}
 			</h1>
 			<p class="lh-lg w-75 fs-6 regular-font">
-				Losi Group is a premium authorized distributor of Henkel
-				Aerospace products, including market leader brands Loctite,
-				Bonderite and Frekote.
+				{{ T "heroDescription" }}
 			</p>
 			<a
 				href="#"
 				class="btn btn-danger losi-btn text-uppercase"
 				data-bs-toggle="modal"
 				data-bs-target="#contactModal"
-				>Get A Quote</a
+				>{{ T "heroCTA" }}</a
 			>
 		</div>
 	</div>
@@ -57,25 +55,3 @@
 	<!-- Pagination -->
 	<div class="swiper-pagination"></div>
 </div>
-
-<script>
-	let swiper = new Swiper(".mySwiper", {
-		spaceBetween: 0,
-		centeredSlides: true,
-		autoplay: {
-			delay: 2500,
-			disableOnInteraction: false,
-		},
-		loop: true,
-		pagination: {
-			el: ".swiper-pagination",
-			clickable: true,
-			bulletClass: "swiper-pagination-bullet",
-			bulletActiveClass: "swiper-pagination-bullet-active",
-		},
-		navigation: {
-			nextEl: ".swiper-button-next",
-			prevEl: ".swiper-button-prev",
-		},
-	});
-</script>

@@ -1,7 +1,7 @@
 <section class="container py-5" id="products">
 	<div class="row">
 		<div class="col text-center black-losi">
-			<h2 class="fw-bold">Best Selling Products</h2>
+			<h2 class="fw-bold">{{ T "productsTitle" }}</h2>
 		</div>
 	</div>
 
@@ -13,7 +13,7 @@
     					class="form-select custom-select text-uppercase shadow-none"
     					id="filter-selector"
     				>
-    					<option value="all" selected>Show All Products</option>
+    					<option value="all" selected>{{ T "productsFiltersAll" }}</option>
     					<optgroup label="Loctite" id="optgroup-loctite">
     						<option value="loctite-all">Loctite Aero</option>
     						<option value="loctite-film-adhesives">
@@ -52,9 +52,7 @@
     				</select>
 				</div>
 				<quote>
-					As a fully certified and authorized distributor, we can provide
-					a full range of Loctite Aero and Bonderite Aero product
-					portfolios with low MOQ, long shelf life and low lead time.
+					{{ T "productsFiltersDescription" }}
 				<quote/>
 			</div>
 		</div>
@@ -67,39 +65,3 @@
 		"syntactics-core-fill-and-abrasives.html" . }} {{ partial "mold-release-frekote.html" . }} {{ partial "metal-pretreatment.html" . }} {{ partial "chemical-milling-and-maskants.html" . }} {{ partial "aircraft-engine-cleaners-maintenance.html" . }} {{ partial "aircraft-depaint-and-repaint.html" . }}
 	</div>
 </section>
-
-<script>
-	document.addEventListener("DOMContentLoaded", function () {
-		const filterSelector = document.querySelector("#filter-selector");
-		const productCards = document.querySelectorAll(".product-card");
-
-		function updateFilters() {
-			const selectedOption =
-				filterSelector.options[filterSelector.selectedIndex];
-			const selectedValue = selectedOption.value;
-			const selectedText = selectedOption.text;
-			const isBrandOption = selectedValue.endsWith("-all");
-
-			productCards.forEach((card) => {
-				if (selectedValue === "all") {
-					card.classList.remove("d-none");
-				} else if (isBrandOption) {
-					const brandClass = selectedValue.replace("-all", "");
-					if (card.classList.contains(brandClass)) {
-						card.classList.remove("d-none");
-					} else {
-						card.classList.add("d-none");
-					}
-				} else {
-					if (card.classList.contains(selectedValue)) {
-						card.classList.remove("d-none");
-					} else {
-						card.classList.add("d-none");
-					}
-				}
-			});
-		}
-
-		filterSelector.addEventListener("change", updateFilters);
-	});
-</script>

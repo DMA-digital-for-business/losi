@@ -1,3 +1,11 @@
 baseURL = 'https://www.drlosi.com/henkel-aerospace-distributor/'
-languageCode = 'it-it'
 title = 'Henkel - Aerospace distributor'
+
+DefaultContentLanguage = "en"
+[languages]
+  [languages.en]
+    languageName = "EN"
+    weight = 1
+  [languages.it]
+    languageName = "IT"
+    weight = 2

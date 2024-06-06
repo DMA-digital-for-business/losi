@@ -5,7 +5,7 @@
 				<h2 class="mb-5 numbers red-losi">2</h2>
 				<div class="text-end position-relative">
 					<p class="fs-4 position-absolute bottom-0 end-0 fw-bold">
-						Divisions
+						{{ T "numbersDivision" }}
 					</p>
 				</div>
 			</div>
@@ -15,7 +15,7 @@
 				<h2 class="mb-5 numbers red-losi">+10</h2>
 				<div class="text-end position-relative">
 					<p class="fs-4 position-absolute bottom-0 end-0 fw-bold">
-						Partners
+						{{ T "numbersPartners" }}
 					</p>
 				</div>
 			</div>
@@ -25,7 +25,7 @@
 				<h2 class="mb-5 numbers red-losi">+250</h2>
 				<div class="text-end position-relative">
 					<p class="fs-4 position-absolute bottom-0 end-0 fw-bold">
-						Customers
+						{{ T "numbersCustomers" }}
 					</p>
 				</div>
 			</div>
@@ -34,53 +34,8 @@
 	<div class="row">
 		<div class="col-12 mt-3 mx-3">
 			<p class="fs-4 lh-2 px- p-0">
-				<span class="fw-bold">A Trusted Partner with Decades of Experience</span>
-				<br>
-				As a global
-				distributor based in Italy, Losi Group offers a comprehensive
-				range of solutions for structural bonding, surface treatment,
-				pre-pregs, vacuum bagging materials, assembly and repair
-				technologies.
+				{{ T "numbersDescription" }}
 			</p>
 		</div>
 	</div>
 </section>
-
-<script>
-	function animateValue(obj, start, end, duration, includePlus = false) {
-		let startTimestamp = null;
-		const step = (timestamp) => {
-			if (!startTimestamp) startTimestamp = timestamp;
-			const progress = Math.min(
-				(timestamp - startTimestamp) / duration,
-				1,
-			);
-			obj.innerHTML =
-				(includePlus ? "+" : "") +
-				Math.floor(progress * (end - start) + start);
-			if (progress < 1) {
-				window.requestAnimationFrame(step);
-			}
-		};
-		window.requestAnimationFrame(step);
-	}
-
-	const observer = new IntersectionObserver(
-		(entries, observer) => {
-			entries.forEach((entry) => {
-				if (entry.isIntersecting) {
-					document.querySelectorAll(".numbers").forEach((number) => {
-						const textContent = number.textContent;
-						const value = parseInt(textContent.replace("+", ""));
-						const includePlus = textContent.includes("+");
-						animateValue(number, 0, value, 1000, includePlus);
-					});
-					observer.disconnect();
-				}
-			});
-		},
-		{ threshold: 0.5 },
-	);
-
-	observer.observe(document.querySelector(".container"));
-</script>

@@ -2,7 +2,7 @@
     <!-- Titolo centrato -->
     <div class="row">
       <div class="col text-center mb-4">
-        <h2 class="fw-bold black-losi">Applications</h2>
+        <h2 class="fw-bold black-losi">{{ (T "applicationsTitle") }}</h2>
       </div>
     </div>
   
@@ -12,32 +12,32 @@
         {{
             partial "application-image.html"
             (dict "imageName" "application-1.jpg"
-                  "title" "AEROSPACE STRUCTURES"
-                  "description" "Materials for composite and metal bonding, surface preparation, potting, edge-fill."
+                  "title" (T "applicationsStructuresTitle")
+                  "description" (T "applicationsStructuresDescription")
         ) }}
       </div>
       <div class="col-md-6">
         {{
             partial "application-image.html"
             (dict "imageName" "application-2.jpg"
-                  "title" "AEROSPACE ELECTRONICS"
-                  "description" "Electronic assembly solutions such as circuit board protection, thermal management, encapsulation, and potting."
+			"title" (T "applicationsElectronicsTitle")
+			"description" (T "applicationsElectronicsDescription")
         ) }}
       </div>
       <div class="col-md-6">
         {{
             partial "application-image.html"
             (dict "imageName" "application-3.jpg"
-                  "title" "AEROSPACE INTERIORS"
-                  "description" "Interior applications includes everything within the aircraft shell from the passenger compartment to the cockpit and cargo hold."
+			"title" (T "applicationsInteriorsTitle")
+			"description" (T "applicationsInteriorsDescription")
         ) }}
       </div>
       <div class="col-md-6">
         {{
             partial "application-image.html"
             (dict "imageName" "application-4.jpg"
-                  "title" "AEROSPACE MRO"
-                  "description" "Ready-to-use solutions to airline MRO customers that meet significant OEM qualifications."
+			"title" (T "applicationsMroTitle")
+			"description" (T "applicationsMroDescription")
         ) }}
       </div>
     </div>
