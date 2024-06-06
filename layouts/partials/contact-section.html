@@ -44,7 +44,7 @@
 				data-bs-toggle="modal"
 				data-bs-target="#contactModal"
 			>
-				Contact us
+				{{ T "footerCTA" }}
 			</button>
 		</div>
 	</div>
@@ -56,7 +56,7 @@
 		<div class="modal-content">
 			<div class="modal-header">
 				<h1 class="modal-title fs-5" id="exampleModalLabel">
-					Contact us
+					{{ T "footerCTA" }}
 				</h1>
 				<button
 					type="button"
@@ -75,7 +75,7 @@
 					hbspt.forms.create({
 						region: "na1",
 						portalId: "20113507",
-						formId: "6397fa70-89ea-4312-81a9-89306a4466fc",
+						formId: '{{ if eq .Site.Language.LanguageName "ENG" }}6397fa70-89ea-4312-81a9-89306a4466fc{{ else }}e25900b5-b86d-4ff0-9276-8c484256a248{{ end }}',
 					});
 				</script>
 			</div>

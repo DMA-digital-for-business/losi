@@ -4,8 +4,8 @@ title = 'Henkel - Aerospace distributor'
 DefaultContentLanguage = "en"
 [languages]
   [languages.en]
-    languageName = "EN"
+    languageName = "ENG"
     weight = 1
   [languages.it]
-    languageName = "IT"
+    languageName = "ITA"
     weight = 2
