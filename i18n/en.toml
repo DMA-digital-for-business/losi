@@ -13,7 +13,7 @@ numbersCustomers = "Customers"
 numbersDescription = "A Trusted Partner with Decades of Experience. As a global distributor based in Italy, Losi Group offers a comprehensive range of solutions for structural bonding, surface treatment, pre-pregs, vacuum bagging materials, assembly and repair technologies."
 
 certificateDescription = "Did you know that Losi Srl has been a trusted partner of Henkel Aerospace for over two decades? That's right! Since 1997, we've been working hand-in- hand with Henkel to deliver top-notch, fully integrated solutions to aerospace OEMs and their sub-suppliers globally. With our technical expertise in Henkel Aero product portfolio and dedicated customer service, we are well equipped to solve any challenge you come across."
-certificateCTA = "contact us"
+certificateCTA = "request a quote"
 
 productsTitle = "Best Selling Products"
 productsFiltersAll = "show all products"
@@ -83,6 +83,6 @@ caseStudiesStructuralDescription = "Structural adhesives play a vital role in ai
 caseStudiesBondTitle = "How to bond and fasten aircrafts with paste adhesives?"
 caseStudiesBondDescription = "Aircraft design advancements have spurred innovation in bonding methods. While mechanical fasteners are still used, the need for adhesives has grown significantly. Henkel offers a broad portfolio of paste adhesives for next generation bonding solutions."
 
-footerCTA = "Contact us"
+footerCTA = "Request a quote"
 footerRights = "All rights reserved."
 footerData = "Company data"

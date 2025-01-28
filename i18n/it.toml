@@ -13,7 +13,7 @@ numbersCustomers = "Clienti"
 numbersDescription = "Un Partner Affidabile con Decenni di Esperienza come distributore globale con sede in Italia, Losi Group offre una gamma completa di soluzioni per l'incollaggio strutturale, il trattamento delle superfici, i pre-impregnati, i materiali per il sacco a vuoto, le tecnologie di assemblaggio e riparazione."
 
 certificateDescription = "Sapevi che Losi Srl è un partner fidato di Henkel Aerospace da oltre due decenni? Esatto! Dal 1997 collaboriamo a stretto contatto con Henkel per offrire soluzioni di prim'ordine e completamente integrate agli OEM aerospaziali e ai loro sub-fornitori a livello globale. Con la nostra competenza tecnica nel portafoglio prodotti Henkel Aero e il servizio clienti dedicato, siamo ben attrezzati per risolvere qualsiasi sfida tu possa incontrare."
-certificateCTA = "contattaci"
+certificateCTA = "chiedi preventivo"
 
 productsTitle = "Prodotti più Venduti"
 productsFiltersAll = "mostra tutti i prodotti"
@@ -83,6 +83,6 @@ caseStudiesStructuralDescription = "Gli adesivi strutturali giocano un ruolo fon
 caseStudiesBondTitle = "Come incollare e fissare gli aeromobili con adesivi in pasta?"
 caseStudiesBondDescription = "I progressi nella progettazione degli aeromobili hanno stimolato l'innovazione nei metodi di incollaggio. Sebbene si utilizzino ancora fissaggi meccanici, la necessità di adesivi è cresciuta significativamente. Henkel offre un ampio portafoglio di adesivi in pasta per soluzioni di incollaggio di nuova generazione."
 
-footerCTA = "Contattaci"
+footerCTA = "Chiedi preventivo"
 footerRights = "Tutti i diritti riservati."
 footerData = "Dati aziendali"
