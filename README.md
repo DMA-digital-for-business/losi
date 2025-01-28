@@ -12,4 +12,4 @@ A simple redesign of DrLosi's landing page using the Hugo framework.
 ## Deploy
 - Lanciar il comando `hugo` per creare la build
 - Collegarsi a losi in FTP
-- Copiare e incollare la cartella corrente nella cartella `henkel-aerospace-distributor` del server
+- Copiare e incollare la cartella `public` nella cartella `public_html/henkel-aerospace-distributor` del server
